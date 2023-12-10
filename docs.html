@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Change the description wrt project -->
+  <meta name="description"
+    content="A Free and open-source documentation template built using html, tailwindcss and javascript." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- stylesheets -->
+
+  <link rel="stylesheet" href="./public/styles/style.css">
+
+  <!-- You can add your own fonts from fonts.google.com -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Default Script tags -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./public/js/index.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+  </script>
+
+  <!-- Replace the title name -->
+  <title>Elipptic5G Documentation</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif; min-height: 100vh; display: flex; flex-direction: column;"
+  class="dark:bg-slate-900 bg-white dark:text-white">
+  <!-- Header start here -->
+  <header class="w-full p-3 border-b dark:border-b  flex sticky top-0 z-10 dark:bg-slate-900 bg-white dark:text-white ">
+    <nav
+      class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white">
+      <ul>
+        <!-- You can change your logo name -->
+        <li class="text-xl">
+          <a href="./index.html">
+          Elipptic5G Documentation
+        </a>
+        </li>
+      </ul>
+      <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+        <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+          <a href="./docs.html">Documentation</a>
+        </li>
+        <div>
+          <ul class="flex">
+            <!-- Change the href link to your respective social media accounts-->
+            <li class="mr-5 flex dark:hidden">
+              <a href="#Github"><img src="./public/svgs/github.svg" alt="GitHub Link" /></a>
+            </li>
+            <li class="mr-5 hidden dark:flex">
+              <a href="#Github"><img src="./public/svgs/github-dark.svg" alt="GitHub Link" /></a>
+            </li>
+            <li class="mr-5 flex dark:hidden">
+              <a href="#Twitter"><img src="./public/svgs/twitter.svg" alt="Twitter Link" /></a>
+            </li>
+            <li class="mr-5 hidden dark:flex">
+              <a href="#Twitter"><img src="./public/svgs/twitter-dark.svg" alt="Twitter Link" /></a>
+            </li>
+            <li class="flex dark:hidden">
+              <a href="#Youtube"><img src="./public/svgs/youtube.svg" alt="YouTube Link" /></a>
+            </li>
+            <li class="hidden dark:flex">
+              <a href="#Youtube"><img src="./public/svgs/youtube-dark.svg" alt="YouTube Link" /></a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+  </header>
+  <!-- Header ends here -->
+
+  <div class="flex flex-col md:flex-row lg:flex-row">
+    <!-- Side menu starts here -->
+    <nav class="flex ml-10 mt-7 md:fixed lg:fixed" data-spy="affix" data-offset-top="300" data-offset-bottom="200"
+      role="navigation">
+      <ul class="nav">
+        <li class="font-medium"><a href="#link1">Quick Start</a>
+          <ul class="nav">
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link1_1">Logging In</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link1_2">Create New Project</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link1_3">Data Preperation</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link1_4">Processing Images</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link1_5">Output Options</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link1_6">Using the 3D Viewer</a>
+            </li>
+          </ul>
+        </li>
+        <li class="font-medium"><a href="#link2">How to Capture Images</a>
+          <ul class="nav">
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link2_1">Flying Tips</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link2_2">Image Overlap</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link2_3">Autonomus Flight</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link2_4">XXXXX</a>
+            </li>
+            <li class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]">
+              <a href="#link2_5">XXXXX</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- Side Menu ends here -->
+
+    <div class="pl-5 md:pl-[250px] lg:pl-[250px]">
+      <!-- Link1 start -->
+      <section id="link1">
+        <div class="h-full mt-10">
+          <p class="font-normal text-2xl">Getting Started</p>
+          <p class="leading-0 w-3/4">
+              Welcome to the documentation for Elipptic5G's 3D modeling and mapping software designed to transform images captured by drones into immersive and accurate representations of the world around us. Whether you're a seasoned professional in the field of surveying, urban planning, agriculture, or a curious enthusiast exploring the possibilities of drone technology, this documentation is your comprehensive guide to unlocking the full potential of our powerful software.
+          </p>
+          <!--<p class="text-sm pt-5 pb-4">Small Description</p> -->
+        </div>
+      </section>
+
+      <!-- Link2 Start -->
+      <section id="link1">
+        <div class="h-full mt-5">
+          <p class="font-normal text-2xl">Quick Start</p>
+          <p class="text-sm pb-4">This guide is designed to get you up and running swiftly,
+             enabling you to harness the power of our tool for transforming drone-captured images into immersive 3D models and maps.
+          </p>
+        </div>
+        <section id="link1_1" class="border-l-[2px]">
+          <div class="h-full mt-3 ml-5">
+            <p class="font-normal text-xl">Logging In</p>
+            <p class="text-sm pb-4">
+              Visit <a href="threecell.ddns.net:8000">threecell.ddns.net</a> and enter the site using the provided test username and password for access.</p>
+            <img src="./public/images/login.png" width="800 px">
+          </div>
+        </section>
+        <section id="link1_2" class="border-l-[2px] pt-5">
+          <div class="h-full mt-5 ml-5">
+            <p class="font-normal text-xl">Create New Project</p>
+            <p class="text-sm pb-4">Click on "New Project," enter the desired name and description, then click "Accept" to create it.</p>
+            <img src="./public/images/1.png" width="800 px">
+          </div>
+        </section>
+        <section id="link1_3" class="border-l-[2px] pt-5">
+          <div class="h-full mt-5 ml-5">
+            <p class="font-normal text-xl">Data Preperation</p>
+            <p class="text-sm">You need at least 5 images, but 16-32 is typically the minimum</p>
+            <p class="text-sm">Images must be overlap by %65 or more. Aim for 70-72%</p>
+            <p class="text-sm pb-4">For great 3D, images must overlap by 83%</p>
+            <img src="./public/images/1.png" width="800 px">
+          </div>
+        </section>
+        <section id="link1_4" class="border-l-[2px] pt-5">
+          <div class="h-full mt-5 ml-5">
+            <p class="font-normal text-xl">Processing Images</p>
+            <p class="text-sm pb-4">Go to "Select Images and GCP" and make sure to choose all your images for processing.</p>
+            <img src="./public/images/selecting.png" width="800 px">
+            <p class="text-base">Additional Options for Processing</p>
+            <p class="text-sm">Explore various parameters within the "Options" menu to tailor the settings for specific processes.</p>
+            <p class="text-sm">Choose "Fast Orthophoto" to expedite processing time and generate solely an orthophoto.</p>
+            <p class="text-sm">Opt for "3D Model" to concentrate on the 3D modeling process.</p>
+            <p class="text-sm pb-4">Alternatively, stick with the "Default" parameters to experience the full potential of the Elipptic Engine.</p>
+            <img src="./public/images/processing.png" width="800 px">
+          </div>
+        </section>
+        <section id="link1_5" class="border-l-[2px] pt-5">
+          <div class="h-full mt-5 ml-5">
+            <p class="font-normal text-xl">Output Options</p>
+            <p class="text-sm pb-4">
+              Expand the "Download Assets" menu to access a variety of formats for downloading. Additionally, if you want to export everything, you can click "All Assets" to download everything in one go.</p>
+            <img src="./public/images/outputs.png" width="800 px">
+          </div>
+        </section>
+        <section id="link1_6" class="border-l-[2px] pt-5">
+          <div class="h-full mt-5 ml-5">
+            <p class="font-normal text-xl">Using the 3D Viewer</p>
+            <p class="text-sm pb-4">Fork and clone the github repository.</p>
+            <img src="./public/images/1.png" width="800 px">
+          </div>
+        </section>
+      </section>
+      <!-- link1 Ends -->
+
+      <!-- Link3 start -->
+      <section id="link2">
+        <div class="h-full mt-5">
+          <p class="font-normal text-2xl">How to Capture Images</p>
+          <p class="leading-0 w-3/4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            quae similique nostrum, laborum, velit beatae esse nobis dolorem
+            saepe quas iste provident iusto assumenda facilis quisquam enim
+            quo. Beatae, fuga!
+          </p>
+          <p class="text-sm pt-5 pb-4">Small Description</p>
+        </div>
+      </section>
+      <!-- Link3 end -->
+  <!-- Footer starts here -->
+  <footer style="margin-top: auto;">
+    <div class="dark:bg-white bg-slate-900 h-38 py-1 px-1 mt-5">
+      <div tabindex="0" aria-label="footer"
+        class="focus:outline-none mx-auto container flex flex-col items-center justify-center">
+        <div class="text-black flex flex-col md:items-center f-f-l pt-0">
+          <div class="my-6 text-base text-color f-f-l">
+            <ul class="md:flex items-center">
+              <li class="cursor-pointer pt-4 lg:py-0">
+                <a href="./index.html"
+                  class="text-white dark:text-black focus:outline-none focus:underline hover:text-gray-200">Home
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm text-color mb-10 f-f-l">
+            <!-- Rename cleandocs with your respective name -->
+            <p tabindex="0" class="text-white dark:text-black focus:outline-none">
+              &copy; 2023 3Cell Innovative Solutions. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+</body>
+
+</html>
